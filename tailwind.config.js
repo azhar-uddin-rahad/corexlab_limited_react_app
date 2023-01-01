@@ -19,7 +19,9 @@ module.exports = {
       'test-color' :  'red',
       'background-home' : '#1E1E1E',
       'white' : '#FFFFFF',
-      'home-background' : '#F2F2F2'
+      'home-background' : '#F2F2F2',
+      'sub-headerColor' : '#333333',
+      'rating-color' : "#F4B30C"
 
      
     },

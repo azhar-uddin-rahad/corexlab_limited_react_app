@@ -25,8 +25,9 @@ const LeftSiteBar = () => {
              <h3 className='border-hover flex items-center gap-6 font-interFont font-normal text-lg hover:bg-hover-color hover:text-main-color pt-5 pb-5 pl-12'><RiLayout2Line/> <span>Dashboard</span></h3>
                 </div>
                 <div className='menuItem'>
-             <h3 className='border-hover flex items-center gap-6 font-interFont font-normal text-lg hover:bg-hover-color hover:text-main-color pt-5 pb-5 pl-12'><RiArchiveLine/> <span>Inventory</span></h3>
+                  <h3 className='border-hover flex items-center gap-6 font-interFont font-normal text-lg hover:bg-hover-color hover:text-main-color pt-5 pb-5 pl-12'><RiArchiveLine/>Inventory<span></span></h3>
                 </div>
+
                 <div className='menuItem'>
              <h3 className='border-hover flex items-center gap-6 font-interFont font-normal text-lg hover:bg-hover-color hover:text-main-color pt-5 pb-5 pl-12'><BiStoreAlt/> <span>Marketplace</span></h3>
                 </div>
