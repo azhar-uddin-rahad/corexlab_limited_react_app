@@ -1,9 +1,23 @@
+
+.leftSideWraper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+
+}
+
+
 .logo{
     width   : 100%;
     padding : 20px 86px 6px 86px;
+   
 }
 
 .logoSection{
     margin-bottom: 52px;
 }
+.menuItem{
+    margin-bottom: 24px;
+}
+
+
 

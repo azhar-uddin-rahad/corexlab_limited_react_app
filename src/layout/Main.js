@@ -9,13 +9,14 @@ const Main = () => {
         <div>
             <div className='flex w-screen h-screen'>
             <LeftSiteBar></LeftSiteBar>
-            <div>
+            <div className='w-screen'>
             <Header></Header>
-            <div><Outlet></Outlet></div>
+             <Outlet></Outlet>
+                
             </div>
             </div>
-            
             <Footer></Footer>
+           
         </div>
     );
 };
