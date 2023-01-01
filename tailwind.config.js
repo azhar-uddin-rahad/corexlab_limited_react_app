@@ -18,7 +18,8 @@ module.exports = {
       'text-color' :  'rgba(0, 0, 0, 0.85);',
       'test-color' :  'red',
       'background-home' : '#1E1E1E',
-      'white' : '#FFFFFF;'
+      'white' : '#FFFFFF',
+      'home-background' : '#F2F2F2'
 
      
     },

@@ -1,0 +1,69 @@
+.location{
+    padding-top: 32px;
+    padding-left: 13px;
+    padding-right: 15px;
+}
+
+
+.location .location-heading{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(157, 157, 157, 0.85);
+    margin-bottom: 10px;
+}
+
+
+.cardWraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+   
+    
+}
+.card-img{
+    width: 20%;
+}
+.card-img img{
+    width: 100%;
+    padding: 15px;
+}
+.card-title{
+ width: 25%;
+ border-right: 1px solid gray;
+ 
+}
+.proges-bar{
+    width: 20%;
+   padding-right: 5px;
+    border-right: 1px solid gray;
+}
+.askingPrice{
+    width: 10%;
+    font-size: 12px;
+    padding: 10px 10px;
+    border-right: 1px solid gray;
+
+}
+.Awarded{
+    display: flex;
+    width: 10%;
+    font-size: 12px;
+    padding: 15px 15px;
+    border-right: 1px solid gray;
+
+}
+.button-section{
+    width: 10%;
+   
+}
+.pagination{
+   text-align: center;
+   margin-top: 50px;
+}
+
+.pagination ul li a{
+    margin-right: 8px;
+    
+}

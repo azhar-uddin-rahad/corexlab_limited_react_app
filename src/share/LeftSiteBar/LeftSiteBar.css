@@ -4,7 +4,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
 
 }
-
+.border-hover:hover{
+    border-left: 4px solid #47CC4D;
+}
 
 .logo{
     width   : 100%;
