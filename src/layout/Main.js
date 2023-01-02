@@ -7,7 +7,7 @@ import LeftSiteBar from '../share/LeftSiteBar/LeftSiteBar';
 const Main = () => {
     return (
         <div>
-            <div className='flex w-screen h-screen'>
+            <div className='flex  h-screen'>
             <LeftSiteBar></LeftSiteBar>
             <div className='w-screen'>
             <Header></Header>

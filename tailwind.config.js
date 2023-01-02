@@ -21,7 +21,8 @@ module.exports = {
       'white' : '#FFFFFF',
       'home-background' : '#F2F2F2',
       'sub-headerColor' : '#333333',
-      'rating-color' : "#F4B30C"
+      'rating-color' : "#F4B30C",
+      'pending-color' : '#F0BC37'
 
      
     },

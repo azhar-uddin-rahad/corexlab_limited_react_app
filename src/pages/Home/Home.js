@@ -6,6 +6,7 @@ import img4 from "../../assets/Rectangle 45.png";
 import img5 from "../../assets/Rectangle 46.png";
 import img6 from "../../assets/Rectangle 62.png";
 import { TbMilitaryAward } from "react-icons/tb";
+import { RiCloseFill,RiTimeLine,RiAuctionLine} from "react-icons/ri";
 import "./Home.css";
 import MultiRangeSlider from "../../component/multiRangeSlider/MultiRangeSlider";
 
@@ -16,49 +17,67 @@ const Home = () => {
       id: 1,
       img: `${img1}`,
       title: "ACDC #08 Outdoor",
+      price: "$600.00/lb",
+      awardedlogo: <TbMilitaryAward/>,
+      awarded: "Awarded",
+      awardedClass:"text-main-color",
       subtitle: "The Green Bull 2 LLC",
       askingPrice: "Asking Price",
-      askingPriceVlaue: "$600.00/lb",
     },
     {
       id: 2,
       img: `${img2}`,
       title: "ACDC #08 Outdoor",
-      subtitle: "The Green Bull 2 LLC",
+      price: "$1100.00/lb",
+      awardedlogo: <RiCloseFill/>,
+      awarded: "Closed",
+      awardedClass:"text-test-color",
+      subtitle: "WCW Enterprises, LLC",
       askingPrice: "Asking Price",
-      askingPriceVlaue: "$600.00/lb",
     },
     {
       id: 3,
       img: `${img3}`,
       title: "ACDC #08 Outdoor",
-      subtitle: "The Green Bull 2 LLC",
+      price: "$800.00/lb",
+      awardedlogo: <TbMilitaryAward/>,
+      awarded: "Awarded",
+      awardedClass:"text-main-color",
+      subtitle: "Green Country MMJ",
       askingPrice: "Asking Price",
-      askingPriceVlaue: "$600.00/lb",
     },
     {
       id: 4,
       img: `${img4}`,
       title: "ACDC #08 Outdoor",
-      subtitle: "The Green Bull 2 LLC",
+      price: "$650.00/lb",
+      awardedlogo: <RiTimeLine/>,
+      awarded: "Pending",
+      awardedClass:"text-pending-color",
+      subtitle: "Gold Leaf Acres, LLC",
       askingPrice: "Asking Price",
-      askingPriceVlaue: "$600.00/lb",
     },
     {
       id: 5,
       img: `${img5}`,
       title: "ACDC #08 Outdoor",
-      subtitle: "The Green Bull 2 LLC",
+      price: "$790.00/lb",
+      awardedlogo: <RiTimeLine/>,
+      awarded: "Pending",
+      awardedClass:"text-pending-color",
+      subtitle: "Pong Thao",
       askingPrice: "Asking Price",
-      askingPriceVlaue: "$600.00/lb",
     },
     {
       id: 6,
       img: `${img6}`,
       title: "ACDC #08 Outdoor",
-      subtitle: "The Green Bull 2 LLC",
+      price: "$600.00/lb",
+      awardedlogo: <TbMilitaryAward/>,
+      awarded: "Awarded",
+      awardedClass:"text-main-color",
+      subtitle: "Loud Factory, LLC",
       askingPrice: "Asking Price",
-      askingPriceVlaue: "$600.00/lb",
     },
   ];
 
@@ -144,7 +163,7 @@ const Home = () => {
 
             <div className="location">
               <div className="location-heading">
-                <h3 className="font-interFont font-medium pb-1">Location</h3>
+                <h3 className="font-interFont font-medium pb-1">Price</h3>
               </div>
 
               <div className="pl-5 pr-9">
@@ -160,7 +179,7 @@ const Home = () => {
 
             <div className="location">
               <div className="location-heading">
-                <h3 className="font-interFont font-medium pb-1">Location</h3>
+                <h3 className="font-interFont font-medium pb-1">Strain</h3>
               </div>
 
               <div className="pl-5 pr-9">
@@ -184,7 +203,7 @@ const Home = () => {
             </div>
             <div className="location">
               <div className="location-heading">
-                <h3 className="font-interFont font-medium pb-1">Location</h3>
+                <h3 className="font-interFont font-medium pb-1">Cultivation Type</h3>
               </div>
 
               <div className="pl-5 pr-9">
@@ -208,7 +227,7 @@ const Home = () => {
             </div>
           </div>
           {cardInfos.map((cardinfo) => (
-            <div key={cardinfo.id} class="col-span-2 bg-white">
+            <div key={cardinfo.id} class="col-span-2 bg-white pr-5">
               <div className="cardWraper">
                 <div className="card-img">
                   <picture>
@@ -216,53 +235,53 @@ const Home = () => {
                   </picture>
                 </div>
                 <div className="card-title">
-                  <h3 className="text-2xl">
-                    ACDC #08 Outdoor <span>The Green Bull 2 LLC</span>
+                  <h3 className="text-sm">
+                    {cardinfo.title} <span className="text-header-top">{cardinfo.subtitle}</span>
                   </h3>
                 </div>
                 <div className="proges-bar">
                   <div class="flex justify-between">
-                    <span class="text-base font-medium text-blue-700 dark:text-white">
-                      Flowbite
+                    <span class="text-base font-medium text-header-top ">
+                    THC
                     </span>
-                    <span class="text-sm font-medium text-blue-700 dark:text-white">
-                      45%
+                    <span class="text-sm font-medium  text-header-top ">
+                      1%
                     </span>
                   </div>
                   <div class="w-full bg-header-top rounded-full h-2.5 dark:bg-gray-700">
                     <div
                       class="bg-main-color h-2.5 rounded-full"
-                      style={{ width: "45%" }}
+                      style={{ width: "5%" }}
                     ></div>
                   </div>
                   <div class="flex justify-between">
-                    <span class="text-base font-medium text-blue-700 dark:text-white">
-                      Flowbite
+                    <span class="text-base font-medium text-blue-700 text-header-top">
+                    CBD
                     </span>
-                    <span class="text-sm font-medium text-blue-700 dark:text-white">
-                      45%
+                    <span class="text-sm font-medium text-header-top">
+                      13%
                     </span>
                   </div>
                   <div class="w-full bg-header-top rounded-full h-2.5 dark:bg-gray-700">
                     <div
                       class="bg-main-color h-2.5 rounded-full"
-                      style={{ width: "45%" }}
+                      style={{ width: "20%" }}
                     ></div>
                   </div>
                 </div>
-                <div className="askingPrice">
-                  <p>Asking Price</p>
-                  <h3>$600.00/lb</h3>
+                <div className="askingPrice text-center">
+                  <span className="text-[10px] font-medium">Asking Price</span>
+                  <h3 className="text-sm font-bold">{cardinfo.price}</h3>
                 </div>
                 <div className="Awarded">
-                  <p>
-                    <TbMilitaryAward></TbMilitaryAward>
+                  <p className={cardinfo.awardedClass}>
+                   {cardinfo.awardedlogo}
                   </p>
-                  <h5>Awarded</h5>
+                  <h5 className={cardinfo.awardedClass}>{cardinfo.awarded}</h5>
                 </div>
                 <div className="button-section">
-                  <button>Bid</button>
-                  <button>View</button>
+                  <button className="flex justify-center items-center rounded-[3px] bg-main-color px-6"><RiAuctionLine></RiAuctionLine> Bid</button>
+                  <button className="flex justify-center text-center items-center rounded-[3px] bg-hover-color px-7 mt-2">View</button>
                 </div>
               </div>
             </div>
